@@ -2,15 +2,27 @@ header{
     display: flex;
     align-items: stretch;
 }
-
 main{
     display:grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
 }
-
-
 footer{
     display: flex;
     align-items: stretch;
+    justify-content: space-between;
+}
+.info{
+    display: flex;       
+    flex-direction: row;
+    gap: 20px;
+}
+.redes{
+    display: flex;      
+    flex-direction: row;
+}
+.enlaces{
+    display: flex;       
+    flex-direction: row;
+    gap: 20px;
 }
