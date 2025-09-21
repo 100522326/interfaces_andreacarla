@@ -1,0 +1,157 @@
+<!--Esta será la página principal sin una sesión iniciada-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pagina_web1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <header> <!--Encabezado-->
+            <div class="header_left">
+                <h1>Mochilas de larga distancia</h1>
+            </div>
+            <div class="header_nav">
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Experiencias</a>
+                    <a href="#">Consejos</a>
+                    <a href="#">Foro</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+            <div class="header_right">
+                <img src="logo.png" alt="Logo" width="60" height="60">
+                <select class="idioma">
+                    <option selected>ES</option>
+                    <option>EN</option>
+                    <option>IT</option>
+                    <option>FR</option>
+                </select>
+            </div>
+        </header>
+
+        <main> <!--Cuerpo principal : 2 contenedores-->
+
+            <!--Contenedor izquierdo-->
+            <div class= "main_left">
+                
+                <div class="main_left_first_row">
+                    <p>Comparte y descubre viajes mochileros de larga distancia</p>
+                </div>
+
+                <div class="main_left_second_row">
+                    <button>&lt;</button>
+                    <div class="info_trips">
+                        <h1>Pack Sudeste Asiático</h1>
+                        <h1>600€</h1>
+                        <p>Vietnam & Camboya: buses, hostales y guía de visados</p>
+                        <button>Comprar</button>
+                    </div>
+                    <button>&gt;</button>
+                </div>
+
+                <div class="main_left_third_row"></div>
+                    <h1>Experiencias de la comunidad</h1>
+                    <!--list-->
+                        <!--Texto ¿¿??-->
+                        <!--Imagen ¿¿??-->
+                        <!--Like ¿¿??-->
+                        <!--Ver más ¿¿??-->
+                    <ul>
+                        <li>
+                            Senderismo por Escocia
+                            <img src="escocia.png" alt="Escocia" width="150" height="100">
+                            <img src="like.png" alt="Simbolo de like"  width="60" height="60">
+                            <button>Ver más</button>
+                        </li>
+                        <li>
+                            Visita las pirámides de Egipto
+                            <img src="egipto.png" alt="Egipto" width="150" height="100">
+                            <img src="like.png" alt="Simbolo de like"  width="60" height="60">
+                            <button>Ver más</button>
+                        </li>
+                        <li>
+                            Conoce la Costa Amalfitana
+                            <img src="costa_amalfitana.png" alt="Costa Amalfitana" width="150" height="100">
+                            <img src="like.png" alt="Simbolo de like"  width="60" height="60">
+                            <button>Ver más</button>
+                        </li>
+                        <li>
+                            Escapada por Liubliana
+                            <img src="liubliana.png" alt="Liubliana" width="150" height="100">
+                            <img src="like.png" alt="Simbolo de like"  width="60" height="60">
+                            <button>Ver más</button>
+                        </li>
+                        <li>
+                            Auroras boreales en Groenlandia
+                            <img src="groenlandia.png" alt="Groenlandia" width="150" height="100">
+                            <img src="like.png" alt="Simbolo de like"  width="60" height="60">
+                            <button>Ver más</button>
+                        </li>
+                        <li>
+                            Trecking en los Pirineos
+                            <img src="pirineos.png" alt="Pirineos" width="150" height="100">
+                            <img src="like.png" alt="Simbolo de like"  width="60" height="60">
+                            <button>Ver más</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Contenedor derecho-->
+
+            <aside class= "main_right">
+                <!-- Usuario -->
+                <div class="user">
+                    <input type="text" class="usuario-field" placeholder="Usuario" autocomplete="off" required>
+                </div>
+                <!-- Contraseña -->
+                <div class="password">
+                    <input type="password" class="input-field" placeholder="Contraseña" autocomplete="off" required>
+                </div>
+                <!-- Recordar credenciales -->
+                <div class="remember_me">
+                    <input type="checkbox" id="check">
+                    <label for="check">Recordar credenciales</label>
+                </div>
+                <div class="login">
+                    <!-- Iniciar sesión -->
+                    <div class="submit">
+                        <button class="submit-btn" id="Iniciar-sesion">Iniciar sesión</button>
+                    </div>
+                    <!-- Registrarse -->
+                    <div class="signup">
+                        <button class="sign-up-btn" id="Registro">Registrarse</button>
+                    </div>
+                    <p>________________________________</p>
+                    <h1>Top destinos mochileros</h1>
+                    <!--Enlaces ¿¿??-->
+                    <h1>Consejos</h1>
+                    <!--Enlaces ¿¿??-->
+                    <h1>Próximos encuentros</h1>
+                    <!--Enlaces ¿¿??-->
+            </aside>
+        </main>
+        <footer> <!--Pie de página-->
+            <div class="footer_left">
+                <p>© 2025 Mochileros<br>sin Fronteras</p>
+            </div>
+            <nav class="footer_nav">
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Ayuda</a>
+            </nav>
+            <div class="footer_right">
+                <img src="ig.png" width="60" height="60">
+                <img src="yt.png" width="60" height="60">
+                <img src="tiktok.png" width="60" height="60">
+            </div>
+            <!--Suscripcion newsletter ¿¿??-->
+        </footer>
+    </body>
+</html>
+
+
