@@ -40,7 +40,7 @@ main{
 
 .main_left_first_row{
     display: flex;
-    background-image: url("pueblo.png");
+    background-image: url("../images/pueblo.png");
     background-size: cover;   
     background-position: center; 
     height: 130px;                 
@@ -55,7 +55,7 @@ main{
 
 .info_trips{
     display: flex;
-    background-image: url("safari.png");
+    background-image: url("../images/safari.png");
     background-size: cover;   
     background-position: center; 
     height: 300px;                 
