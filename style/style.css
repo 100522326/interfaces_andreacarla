@@ -49,17 +49,21 @@ main{
 }
 
 .main_left_second_row{
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .info_trips{
-    display: flex;
+    display: grid;
     background-image: url("../images/safari.png");
     background-size: cover;   
     background-position: center; 
-    height: 300px;                 
-    padding: 20px;            
+    height: 300px;
+    width: 690px;                 
+    padding: 20px;  
 }
 
 aside {
@@ -112,6 +116,19 @@ h1{
 ul{
     display: grid;
 }
+
 li{
     list-style-type: none;
+}
+
+.info_trips button{
+    align-self: flex-end;
+}
+
+#text1{
+    align-self: start;
+}
+
+#text2{
+    align-self: end;
 }
