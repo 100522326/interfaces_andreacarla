@@ -1,69 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
 body{
+    font-family: "Montserrat", sans-serif;
     margin-left: 30px;
     margin-right: 30px;
 }
 
 header{
-    display:flex;
-    align-items:stretch;
-    justify-content:space-between;
+    display:grid;
+    align-items:center ;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
 }
 
 .header_left{
-    display:flex;
+    display: grid;
     align-items:center;              
 }
 
-.header_nav{
+.header_nav nav{
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #007BFF;
 }
 
 .header_right{
-    display: flex;
+    display: grid;
+    grid-auto-flow:column;
     align-items: center;
-    gap: 1rem;      
+    gap: 16px;   
+    cursor: pointer;   
 }
 
-main{
-    display:grid;
+main {
+    display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 10px;
+    gap: 16px;
+    
 }
-
-.main_left{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+  
+.main_left {
+    display: grid;
+    gap: 20px;
+    
+  }
 
 .main_left_first_row{
-    display: flex;
+    display: grid;
+    align-content: end;
     background-image: url("../images/pueblo.png");
     background-size: cover;   
     background-position: center; 
     height: 130px;                 
     padding: 20px;                 
-    justify-content: flex-start;   
+      
 }
 
 .main_left_second_row{
     padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    gap: 12px;
 }
 
 .info_trips{
     display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 8px;
     background-image: url("../images/safari.png");
     background-size: cover;   
     background-position: center; 
     height: 300px;
-    width: 690px;                 
+    width: 100%;                 
     padding: 20px;  
+}
+
+
+.main_left_third_row{
+    display: grid;
+    gap: 12px;
+}
+.experiencias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experiencias h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.card {
+    display:grid;
+    grid-template-columns: 1fr auto;     
+    grid-template-rows: auto 1fr auto;   
+    gap:8px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:10px;
+    
+}
+.card h3 {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.pic {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    aspect-ratio: 7/5;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.like {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    justify-self: end;
+    width: 20px;
+    cursor: pointer;
+    justify-self: end;
+}
+.more {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+    align-self: end;
+    padding: 6px 12px;
+    font-size:12px;
+    border: 1px solid #bbb;
+    background:#f7f7f7;
+    color:#222;
+    border-radius: 999px;
+    cursor: pointer;
+}
+.experiencias img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.experiencias .like {
+    width: 28px;
+    justify-self: end;
+}
+.experiencias button {
+    justify-self: start;
+    padding: 6px 12px;
+    cursor: pointer;
 }
 
 aside {
@@ -71,7 +188,8 @@ aside {
     background-color: #f4f4f4;
     overflow-y: auto;
 }
-  
+
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -96,6 +214,7 @@ h1{
     font-size:1.4rem;
     line-height:1;
     font-weight: bold;
+   
 }
 
 .botones_inicio {
@@ -113,9 +232,7 @@ h1{
     border-radius: 5px;
 }
 
-ul{
-    display: grid;
-}
+
 
 li{
     list-style-type: none;
@@ -131,4 +248,19 @@ li{
 
 #text2{
     align-self: end;
+}
+
+
+
+
+@media (max-width: 900px) {
+    main {
+      grid-template-columns: 1fr; 
+    }
+}
+@media (max-width: 900px){
+    .experiencias{ grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+}
+@media (max-width: 560px){
+    .experiencias{ grid-template-columns: 1fr; }
 }
