@@ -74,8 +74,6 @@ main {
   }
 
 .main_left_first_row{
-    display: grid;
-    align-content: end;
     background-image: url("../images/pueblo.png");
     background-size: cover;   
     background-position: center; 
