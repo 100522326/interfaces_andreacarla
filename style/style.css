@@ -73,6 +73,38 @@ main {
     padding: 20px;                 
       
 }
+.main_left_second_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background-image: url("../images/safari.png");
+    background-size: cover; 
+    height: 300px;
+    width: 100%;                 
+    padding: 20px;
+}
+
+.main_left_second_row{ /**auto 1fr auto NO**/
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+.main_left_third_row{
+    display: grid;
+    gap: 12px;
+}
+.main_left_second_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
 
 .main_left_second_row{ /**auto 1fr auto NO**/
     padding-top: 30px;
@@ -87,17 +119,32 @@ main {
     grid-template-rows: auto auto 1fr auto;
     gap: 8px;
     background-image: url("../images/safari.png");
-    background-size: cover;   
-    background-position: center; 
+    background-size: cover; 
     height: 300px;
     width: 100%;                 
-    padding: 20px;  
+    padding: 20px;
+}
+
+.info_trips {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
 }
 
 
-.main_left_third_row{
-    display: grid;
-    gap: 12px;
+.info_trips_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info_trips_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_trips_bottom p {
+    max-width: 60%; 
 }
 .experiencias {
     display: grid;
