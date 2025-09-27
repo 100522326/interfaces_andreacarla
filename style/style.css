@@ -85,6 +85,28 @@ main {
     padding: 20px;
 }
 
+.info_trips {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+
+.info_trips_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info_trips_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_trips_bottom p {
+    max-width: 60%; 
+}
+
 .main_left_second_row{ /**auto 1fr auto NO**/
     padding-top: 30px;
     display: grid;
