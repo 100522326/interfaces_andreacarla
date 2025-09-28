@@ -9,18 +9,18 @@
 </head>
 
     <body>
-        <header> <!--Encabezado-->
+        <header> 
             <div class="header_left">
                 <h1>Mochilas de larga distancia</h1>
             </div>
             <div class="header_nav">
                 <nav>
                     <ul class="menu">
-                      <li><a href="#">Inicio</a></li>
-                      <li><a href="#">Experiencias</a></li>
-                      <li><a href="#">Consejos</a></li>
-                      <li><a href="#">Foro</a></li>
-                      <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Experiencias</a></li>
+                    <li><a href="#">Consejos</a></li>
+                    <li><a href="#">Foro</a></li>
+                    <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>  
             </div>
@@ -35,138 +35,136 @@
             </div>
         </header>
 
-        <main> <!--Cuerpo principal : 2 contenedores-->
+        <main id="home" class="pagina_principal" > <!--Cuerpo principal : 2 contenedores-->
 
             <!--Contenedor izquierdo-->
-            <div class= "main_left">
+            <section class="main_left">
                 
-                <div class="main_left_first_row">
-                    <p>Comparte y descubre viajes mochileros de larga distancia</p>
-                </div>
-
-                <div class="main_left_second_row">
-                    <button>&lt;</button>
+                <section class="main_left_first_row">
+                    <h1>COMPARTE Y DESCUBRE!</h1>
+                    <h1>Viajes mochileros de larga distancia</h1>
+                </section>
+                <!-- slider  -->
+                <section class="main_left_second_row">
+                    <button class="slider_arrow_left" aria-label="Atrás">←</button>
                     
-                    <div class="info_trips">
+                    <section class="info_trips">
                         <!-- Arriba -->
                         <div class="info_trips_top">
                             <h1>Pack Sudeste Asiático</h1>
-                            <h1>600€</h1>
+                            <p>600€</p>
                         </div>
                         <!-- Abajo -->
                         <div class="info_trips_bottom">
                             <p>Vietnam & Camboya: buses, hostales y guía de visados</p>
                             <button>Comprar</button>
                         </div>
-                    </div>
+                    </section>
                     
-                    <button>&gt;</button>
-                </div>
+                    <button class="slider_arrow_right" aria-label="Siguientes packs">→</button>
+                </section>
 
-                <article class="main_left_third_row"></div>
+                <article class="main_left_third_row">
                     <h2>Experiencias de la comunidad mochilera</h2>
                     <ul class="experiencias">
-                        <li class="card">
-                            <h3>Senderismo por Escocia</h3>
-                            <img class= "pic" src="images/escocia.png" alt="Escocia" width="150" height="100">
-                            <div class="like_more">
-                                <img class="like" src="images/like.png" alt="Simbolo de like"  width="60" height="60">
-                                <button class="more" type="button">Ver más</button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <h3>Visita las pirámides de Egipto</h3>
-                            <img class= "pic" src="images/egipto.png" alt="Egipto" width="150" height="100">
-                            <div class="like_more">
-                                <img class="like" src="images/like.png" alt="Simbolo de like"  width="60" height="60">
-                                <button class="more" type="button">Ver más</button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <h3>Conoce la Costa Amalfitana</h3>
-                            <img class= "pic" src="images/costa_amalfitana.png" alt="Costa Amalfitana" width="150" height="100">
-                            <div class="like_more">   
-                                <img class="like" src="images/like.png" alt="Simbolo de like"  width="60" height="60">
-                                <button class="more" type="button">Ver más</button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <h3>Escapada por Liubliana</h3>
-                            <img class= "pic" src="images/liubliana.png" alt="Liubliana" width="150" height="100">
-                            <div class="like_more">
-                                <img class="like" src="images/like.png" alt="Simbolo de like"  width="60" height="60">
-                                <button class="more" type="button">Ver más</button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <h3>Auroras boreales en Groenlandia</h3>
-                            <img class= "pic" src="images/groenlandia.png" alt="Groenlandia" width="150" height="100">
-                            <div class="like_more">
-                                <img class="like" src="images/like.png" alt="Simbolo de like"  width="60" height="60">
-                                <button class="more" type="button">Ver más</button>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <h3>Trecking en los Pirineos</h3>
-                            <img class="pic" src="images/pirineos.png" alt="Pirineos" width="150" height="100">
-                            <div class="like_more">
-                                <img class="like" src="images/like.png" alt="Simbolo de like"  width="60" height="60">
-                                <button class="more" type="button">Ver más</button>
-                            </div>
-                        </li>
+                    <li class="card">
+                        <h3>Senderismo por Escocia</h3>
+                        <img class="pic" src="images/escocia.png" alt="Paisaje de Escocia">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Visita las pirámides de Egipto</h3>
+                        <img class="pic" src="images/egipto.png" alt="Pirámides de Egipto">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Conoce la Costa Amalfitana</h3>
+                        <img class="pic" src="images/costa_amalfitana.png" alt="Costa Amalfitana">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Escapada por Liubliana</h3>
+                        <img class="pic" src="images/liubliana.png" alt="Centro de Liubliana">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Auroras boreales en Groenlandia</h3>
+                        <img class="pic" src="images/groenlandia.png" alt="Auroras en Groenlandia">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Trekking en los Pirineos</h3>
+                        <img class="pic" src="images/pirineos.png" alt="Ruta en Pirineos">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
                     </ul>
                 </article>
-            </section>
+                </section>
 
             <!--Contenedor derecho-->
 
             <aside class= "main_right">
-                <section class="credenciales">
+                <form class="credenciales">
+                    <h2>Iniciar sesión</h2>
                     <!-- Usuario -->
                     <div class="user">
-                        <input type="text" class="usuario-field" placeholder="Usuario" autocomplete="off" required>
-                    </div>
+                        <label for="usuario">Usuario:</label>
+                        <input id="usuario" name="usuario" type="text" class="usuario-field" placeholder="Usuario" autocomplete="username" required>
+                    </div>              
                     <!-- Contraseña -->
                     <div class="password">
-                        <input type="password" class="input-field" placeholder="Contraseña" autocomplete="off" required>
-                    </div>
-                    <br />
+                        <label for="password">Contraseña:</label>
+                        <input id="password" name="password" type="password" class="input-field" placeholder="Contraseña" autocomplete="current-password" required>
+                    </div> 
                     <!-- Recordar credenciales -->
                     <div class="remember_me">
                         <input type="checkbox" id="check">
                         <label for="check">Recordar credenciales</label>
                     </div>
-                </section>
-                <br />
-                <section class="login">
-                    <!-- Iniciar sesión -->
-                    <div class="submit">
-                        <button class="submit-btn" id="Iniciar-sesion">Iniciar sesión</button>
+                    <div class="login">
+                        <a class="submit_btn" id="inicio" href="#versionB">Iniciar sesión</button>
+                        <a class="sign_up_btn" id="registro" href="#versionA">Registrate</a>
                     </div>
-                    <!-- Registrarse -->
-                    <div class="signup">
-                        <button class="sign-up-btn" id="Registro">Registrarse</button>
-                    </div>
-                </section>
-                <br />
+                </form>
+                    
                 <section class="enlaces_aside">
-                    <h1>Top destinos mochileros</h1><br />
+                    <h1>Top destinos mochileros</h1>
                     <ul>
                         <li><a href="#">India</a></li>
                         <li><a href="#">Perú</a></li>
-                        <li><a href="#">Tanzania</a></li><br />
+                        <li><a href="#">Tanzania</a></li>
                     </ul>
-                    <h1>Consejos</h1><br />
+                    
+                    <h1>Consejos</h1>
                     <ul>
                         <li><a href="#">No olvides tu pasaporte</a></li>
                         <li><a href="#">Contrata un seguro de viaje</a></li>
-                        <li><a href="#">Viaja ligero</a></li><br />
+                        <li><a href="#">Viaja ligero</a></li>
                     </ul>
-                    <h1>Próximos encuentros</h1><br />
+                    
+                    <h1>Próximos encuentros</h1>
                     <ul>
                         <li><a href="#">Madrid 15/10</a></li>
                         <li><a href="#">Santiago 20/10</a></li>
-                        <li><a href="#">Malaga 02/11</a></li><br />
+                        <li><a href="#">Malaga 02/11</a></li>
                     </ul>
                 </section>
             </aside>
@@ -185,7 +183,53 @@
                 <img src="images/yt.png" width="60" height="60">
                 <img src="images/tiktok.png" width="60" height="60">
             </div>
-            <!--Suscripcion newsletter ¿¿??-->
+            <form class="newsletter">
+                <label for="newsletter_email">Suscripción a newsletter:</label>
+                <div class="newsletter_registro">
+                <input type="email" id="newsletter_email" placeholder="Tu correo" required>
+                <button type="submit">Suscribirse</button>
+                </div>
+            </form>
         </footer>
+    
+        <!-- Versión a: Registro de nuevos usuarios -->
+        <main id="versionA" class="pag_registro">
+            <section class="registro_pag">
+                <h1>Registro de nuevos usuarios</h1>
+                <form class="registro_form">
+                    <!-- Usuario -->
+                    <div class="user">
+                        <label for="new_usuario">Usuario:</label>
+                        <input id="new_usuario" name="new_usuario" type="text" class="usuario-field" placeholder="Usuario" autocomplete="username" required>
+                    </div>              
+                    <!-- Email -->
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="email" class="input-field" placeholder="Email" autocomplete="email" required>
+                    </div> 
+                    <!-- Contraseña -->
+                    <div class="password">
+                        <label for="new_password">Contraseña:</label>
+                        <input id="new_password" name="new_password" type="password" class="input-field" placeholder="Contraseña" autocomplete="new-password" required>
+                    </div> 
+                    <!-- Confirmar contraseña -->
+                    <div class="confirm_password">
+                        <label for="confirm_password">Confirmar contraseña:</label>
+                        <input id="confirm_password" name="confirm_password" type="password" class="input-field" placeholder="Confirmar contraseña" autocomplete="new-password" required>
+                    </div> 
+                    <!-- Aceptar términos y condiciones -->
+                    <div class="terms">
+                        <input type="checkbox" id="terms_check" required>
+                        <label for="terms_check">Acepto los términos y condiciones</label>
+                    </div>
+                    <div class="register">
+                        <a class="register_btn" href="#versionB">Guardar datos y acceder</a>
+                        <a class="back_btn" href="#home">Volver</a>
+                      </div>
+                </form>
+            </section>
+            
+        
     </body>
 </html>
+

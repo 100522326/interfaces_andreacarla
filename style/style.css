@@ -14,15 +14,10 @@ body{
 header{
     display:grid;
     align-items:center ;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 2fr auto;
     align-items: center;
     gap: 16px;
 }
-
-/* .header_left{
-    display: grid;
-    align-items:center;              
-} */
 
 .header_right{
     display: grid;
@@ -66,87 +61,40 @@ main {
   }
 
 .main_left_first_row{
-    background-image: url("../images/pueblo.png");
+    background-image: url("../images/header1.jpg");
     background-size: cover;   
     background-position: center; 
     height: 130px;                 
     padding: 20px;                 
       
 }
-.main_left_second_row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    background-image: url("../images/safari.png");
-    background-size: cover; 
-    height: 300px;
-    width: 100%;                 
-    padding: 20px;
+.main_left_first_row h1{
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 20px;
+
 }
-
-.info_trips {
-    display: flex;
-    flex-direction: column;
-    height: 100%; 
-}
-
-
-.info_trips_top {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.info_trips_bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.info_trips_bottom p {
-    max-width: 60%; 
-}
-
-.main_left_second_row{ /**auto 1fr auto NO**/
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 12px;
-}
-
-
 
 .main_left_third_row{
     display: grid;
     gap: 12px;
 }
-.main_left_second_row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-}
 
-.main_left_second_row{ /**auto 1fr auto NO**/
+.main_left_second_row { /**auto 1fr auto NO**/
     padding-top: 30px;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 12px;
+    background-image: url("../images/sudeste_asiatico1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px; 
+    border-radius: 12px;
 }
-
-.info_trips{ /**auto auto 1fr auto NO**/
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    gap: 8px;
-    background-image: url("../images/safari.png");
-    background-size: cover; 
-    height: 300px;
-    width: 100%;                 
-    padding: 20px;
-}
-
 .info_trips {
     display: flex;
     flex-direction: column;
@@ -159,15 +107,19 @@ main {
     justify-content: space-between;
 }
 
-
 .info_trips_bottom {
     display: flex;
     justify-content: space-between;
 }
-
+.info_trips_bottom h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
 .info_trips_bottom p {
     max-width: 60%; 
 }
+
 .experiencias {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -245,20 +197,115 @@ aside {
     align-items: center;
     background-color: #f4f4f4;
 }
-.credenciales{
-    display:flex;
-    align-items: center;
+.credenciales {
+    display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    align-items: stretch;
+    background-color: #e5e1d1;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 15px;
+    width: 100%;
+}
+
+.credenciales h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color:  #2f3e1f;
+}
+.credenciales label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2f3e1f;
+    margin-bottom: 4px;
+}
+
+.credenciales input[type="text"],
+.credenciales input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c5c0aa;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff
+}
+.remember_me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #2f3e1f;
 }
 .login{
     display:flex;
-    align-items: center;
     flex-direction: row;
-    gap: 8px;
-
+    gap: 10px;
+    margin-top: 10px;
 }
-
+.submit_btn {
+    flex-grow:1; 
+    flex-shrink:1; 
+    flex-basis:0%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8b4513; 
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.submit_btn:hover {
+    background-color: #6a3210;
+}
+.sign_up_btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #556b2f; 
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sign_up_btn:hover {
+    background-color: #3d4e22;
+}
+.enlaces_aside h1 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #6a3210;
+    font-weight: 700;
+  }
+  
+.enlaces_aside ul {
+    list-style: none;
+    padding-left: 16px; 
+    margin-bottom: 10px;
+}
+.enlaces_aside li {
+    text-decoration: none;
+    margin-bottom: 6px;    
+    font-size: 0.95rem;
+    color: #333;  
+}
+  
+.enlaces_aside a {
+    text-decoration: none;
+    color: #333;
+}
+  
+.enlaces_aside a:hover {
+    color: #556b2f;
+    text-decoration: underline;
+}
 
 footer {
     display: flex;
@@ -301,7 +348,88 @@ h1{
     color: white;
     border-radius: 5px;
 }
+.pag_registro {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+  
+.registro_pag {
+max-width: 600px;
+width: 100%;
+background: #fff;
+padding: 30px;
+border-radius: 12px;
+}
 
+.registro_pag h1 {
+font-size: 1.8rem;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.registro_form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.registro_form label {
+display: block;
+font-weight: 600;
+margin-bottom: 5px;
+}
+
+.registro_form input[type="text"],
+.registro_form input[type="email"],
+.registro_form input[type="password"] {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 1rem;
+}
+
+.terms {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.register {
+display: flex;
+justify-content: space-between;
+margin-top: 15px;
+}
+
+.register_btn,
+.back_btn {
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 6px;
+font-size: 1rem;
+font-weight: 600;
+text-align: center;
+}
+
+.register_btn {
+background: #8b7851;
+color: #fff;
+}
+
+.register_btn:hover {
+background: #6f5e3f;
+}
+
+.back_btn {
+background: #ddd;
+color: #333;
+}
+
+.back_btn:hover {
+background: #bbb;
+}
 
 
 li{
