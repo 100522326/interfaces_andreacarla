@@ -31,14 +31,12 @@ header{
     flex-wrap: wrap;
     list-style: none;
     gap: 24px;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
 }
 
 .menu li a {
     text-decoration: none;
     color: black;
-    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
 }
@@ -51,13 +49,12 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 16px;
-    
+    padding-bottom: 20px;
 }
   
 .main_left {
     display: grid;
     gap: 20px;
-    
   }
 
 .main_left_first_row{
@@ -69,44 +66,45 @@ main {
       
 }
 .main_left_first_row h1{
-    font-family: "Montserrat", sans-serif;
     color: #000000;
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 0;
-    padding-top: 20px;
-
+    padding-bottom: 20px;
 }
 
 .main_left_third_row{
     display: grid;
-    gap: 12px;
+    gap: 20px;
 }
 
-.main_left_second_row { /**auto 1fr auto NO**/
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
+.main_left_second_row { 
+    padding: 15px;
+    display: grid;    
+    grid-template-rows: 2fr 1fr 1fr;
     gap: 12px;
     background-image: url("../images/sudeste_asiatico1.jpg");
     background-size: cover;
     background-position: center;
     height: 250px; 
-    border-radius: 12px;
 }
-.info_trips {
+.comprar{
     display: flex;
-    flex-direction: column;
-    height: 100%; 
+    align-items: end;
+    justify-content: end;
 }
-
-
+.comprar button{
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #ab865f;
+}
 .info_trips_top {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
-
 .info_trips_bottom {
     display: flex;
     justify-content: space-between;
@@ -114,19 +112,28 @@ main {
 .info_trips_bottom h2 {
     font-size: 1.2rem;
     font-weight: 700;
-    margin: 0;
 }
-.info_trips_bottom p {
-    max-width: 60%; 
+.info_trips_top p{
+    border:1px solid #7a7a7a;
+    border-radius: 12px;
+    padding: 8px;
 }
-
+.arrows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrows button{
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    border-style: none;
+}
 .experiencias {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .experiencias h2 {
@@ -136,8 +143,8 @@ main {
 .card {
     display:grid;
     grid-template-columns: 2fr 1fr;     
-    grid-template-rows: auto auto;   
-    gap:8px;
+    grid-template-rows: 1fr 3fr;   
+    gap:5px;
     border:1px solid #ddd;
     border-radius:10px;
     padding:10px;
@@ -160,7 +167,8 @@ main {
 .like {
     cursor: pointer;
     padding-top: 20px;
-}
+}  
+
 .like_more{
     display: flex;
     flex-direction: column;
@@ -348,150 +356,6 @@ h1{
     color: white;
     border-radius: 5px;
 }
-
-/* Registro version A */
-.pag_registro { display: none; }
-#versionA:target { display: flex; }
-#versionA:target ~ .pagina_principal { display: none; }
-
-.pag_registro {
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px;
-}
-  
-.registro_pag {
-    max-width: 600px;
-    width: 100%;
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-}
-
-.registro_pag h1 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.registro_form {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr)); 
-    gap: 14px 16px;
-}
-
-.registro_form label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.registro_form input[type="text"],
-.registro_form input[type="email"],
-.registro_form input[type="password"] {
-width: 100%;
-padding: 10px;
-border: 1px solid #ccc;
-border-radius: 6px;
-font-size: 1rem;
-}
-.form_fecha { grid-column: 1 / -1; }
-.fecha_inputs {
-  position: relative;
-  display: grid;
-  grid-template-columns: 48px 48px 1fr;
-  gap: 8px;
-  align-items: center;
-}
-.fecha_inputs input { text-align: center; }
-.fecha_inputs input:last-child { text-align: left; padding-left: 10px; }
-.ico_cal {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  font-size: 18px;
-}
-.form_file { grid-column: 1 / -1; }
-.file_fake {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-}
-.file_fake input[type="file"] { display: none; }
-.file_fake span {
-  display: inline-block;
-  padding: 8px 14px;
-  border: 1px solid #bbb;
-  border-radius: 6px;
-  background: #f7f7f7;
-  font-weight: 600;
-}
-
-.form_terms {
-  grid-column: 1 / -1;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.form_terms a { color: #007BFF; text-decoration: none; }
-.form_terms a:hover { text-decoration: underline; }
-
-.register {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 6px;
-}
-.register_btn, .back_btn {
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-}
-.register_btn {
-  background: #8b7851;
-  color: #fff;
-  border: 1px solid #7b6a46;
-}
-.register_btn:hover { background: #6f5e3f; }
-.back_btn {
-  background: #e8e8e8;
-  color: #333;
-  border: 1px solid #d0d0d0;
-}
-.back_btn:hover { background: #d6d6d6; }
-
-
-
-li{
-    list-style-type: none;
-}
-
-.info_trips button{
-    align-self: flex-end;
-}
-
-#text1{
-    align-self: start;
-}
-
-#text2{
-    align-self: end;
-}
-
-@media only screen and (max-width: 600px) {
-header {
-    grid-template-columns: auto auto;
-}
-}
-
-
 
 @media (max-width: 900px) {
     main {

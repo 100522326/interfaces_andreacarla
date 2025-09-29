@@ -40,15 +40,13 @@
             <!--Contenedor izquierdo-->
             <section class="main_left">
                 
-                <section class="main_left_first_row">
+                <article class="main_left_first_row">
                     <h1>COMPARTE Y DESCUBRE!</h1>
                     <h1>Viajes mochileros de larga distancia</h1>
-                </section>
-                <!-- slider  -->
-                <section class="main_left_second_row">
-                    <button class="slider_arrow_left" aria-label="Atrás">←</button>
-                    
-                    <section class="info_trips">
+                </article>
+                <!-- Carrusel  -->
+                <article class="main_left_second_row">
+                    <div class="info_trips">
                         <!-- Arriba -->
                         <div class="info_trips_top">
                             <h1>Pack Sudeste Asiático</h1>
@@ -57,12 +55,16 @@
                         <!-- Abajo -->
                         <div class="info_trips_bottom">
                             <p>Vietnam & Camboya: buses, hostales y guía de visados</p>
-                            <button>Comprar</button>
                         </div>
-                    </section>
-                    
-                    <button class="slider_arrow_right" aria-label="Siguientes packs">→</button>
-                </section>
+                    </div>
+                    <div class="arrows">
+                        <button class="slider_arrow_left" aria-label="Atrás">←</button>
+                        <button class="slider_arrow_right" aria-label="Siguientes packs">→</button>
+                    </div>
+                    <div class="comprar">
+                        <button>Comprar</button>   
+                    </div>
+                </article>
 
                 <article class="main_left_third_row">
                     <h2>Experiencias de la comunidad mochilera</h2>
@@ -140,8 +142,8 @@
                         <label for="check">Recordar credenciales</label>
                     </div>
                     <div class="login">
-                        <a class="submit_btn" id="inicio" href="#versionB">Iniciar sesión</a>
-                        <a class="sign_up_btn" id="registro" href="#versionA">Registrate</a>
+                        <a class="submit_btn" id="inicio" href="#">Iniciar sesión</a>
+                        <a class="sign_up_btn" id="registro" href="#register.html">Registrate</a>
                     </div>
                 </form>
                     
@@ -191,75 +193,6 @@
                 </div>
             </form>
         </footer>
-    
-        <!-- Versión a: Registro de nuevos usuarios -->
-        <section id="versionA" class="pag_registro">
-            <section class="registro_pag">
-                <h1>Registro de nuevos usuarios</h1>
-                <form class="registro_form" action="#" method="post">
-                    <!-- Nombre -->
-                    <div class="form_group">
-                      <label for="nombre">Nombre </label>
-                      <input id="nombre" name="nombre" type="text" required>
-                    </div>
-                    <!-- Apellido -->
-                    <div class="form_group">
-                      <label for="apellidos">Apellidos</label>
-                      <input id="apellidos" name="apellidos" type="text" required>
-                    </div>
-                    <!-- Correo -->
-                    <div class="form_group">
-                      <label for="correo">Correo electrónico</label>
-                      <input id="correo" name="correo" type="email" required>
-                    </div>
-                    <!-- Confirmar correo -->
-                    <div class="form_group">
-                      <label for="correo2">Confirmar correo</label>
-                      <input id="correo2" name="correo2" type="email" required>
-                    </div>
-                    <!-- Fecha de nacimiento -->
-                    <div class="form_group form_fecha">
-                        <label class="label_inline">Fecha de nacimiento</label>
-                        <div class="fecha_inputs">
-                        <input type="text" inputmode="numeric" placeholder="DD" aria-label="Día" maxlength="2" required>
-                        <input type="text" inputmode="numeric" placeholder="MM" aria-label="Mes" maxlength="2" required>
-                        <input type="text" inputmode="numeric" placeholder="AAAA" aria-label="Año" maxlength="4" required>
-                        </div>
-                    </div>
-                    <!-- Login -->
-                    <div class="form_group">
-                        <label for="login">Login</label>
-                        <input id="login" name="login" type="text" required>
-                    </div>
-                    <!-- Password -->
-                    <div class="form_group">
-                        <label for="password">Password</label>
-                        <input id="password" name="password" type="password" required>
-                    </div>
-                    <!-- Subir imagen -->
-                    <div class="form_group form_file">
-                        <span class="label_inline">Subir imagen de perfil</span>
-                        <label class="file_fake">
-                        <input type="file" name="avatar" accept="image/*">
-                        <span>Examinar…</span>
-                        </label>
-                    </div>
-                    <!-- Checkbox -->
-                    <div class="form_group form_terms">
-                        <input type="checkbox" id="privacidad" required>
-                        <label for="privacidad">Acepto la <a href="#">Política de privacidad</a></label>
-                    </div>
-            
-                    <!-- Acciones -->
-                    <div class="register">
-                        <!-- Enlace a Versión b -->
-                        <a class="register_btn" href="#versionB" role="button">Guardar datos y acceder</a>
-                        <a class="back_btn" href="#home">Volver</a>
-                    </div>
-                </form>
-            </section>
-        </section>    
-        
     </body>
 </html>
 
