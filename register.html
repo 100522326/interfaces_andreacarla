@@ -3,8 +3,8 @@
 
 <html>
 <head>
-    <title>Pagina_web1</title>
-    <link rel="stylesheet" href="style/style_reg.css">
+    <title>Pagina_web2</title>
+    <link rel="stylesheet" href="./style/style_reg.css">
 </head>
 
     <body>
@@ -33,74 +33,78 @@
                 </select>
             </div>
         </header>
+
         <main>
-            <section id="versionA" class="pag_registro">
-                <section class="registro_pag">
-                    <h1>Registro de nuevos usuarios</h1>
-                    <form class="registro_form" action="#" method="post">
+            <section class="pag_registro">
+                <h1>Registro de nuevos usuarios</h1>
+                <form class="registro_pag">
+                    <div class="type1">
                         <!-- Nombre -->
                         <div class="form_group">
-                        <label for="nombre">Nombre </label>
+                        <label for="nombre">Nombre</label>
                         <input id="nombre" name="nombre" type="text" required>
                         </div>
+
                         <!-- Apellido -->
                         <div class="form_group">
                         <label for="apellidos">Apellidos</label>
                         <input id="apellidos" name="apellidos" type="text" required>
                         </div>
+                    </div>
+                    <div class="type1">
                         <!-- Correo -->
                         <div class="form_group">
                         <label for="correo">Correo electrónico</label>
                         <input id="correo" name="correo" type="email" required>
                         </div>
+
                         <!-- Confirmar correo -->
                         <div class="form_group">
                         <label for="correo2">Confirmar correo</label>
                         <input id="correo2" name="correo2" type="email" required>
                         </div>
+                    </div>  
+                    <div class = "type2">
                         <!-- Fecha de nacimiento -->
-                        <div class="form_group form_fecha">
-                            <label class="label_inline">Fecha de nacimiento</label>
-                            <div class="fecha_inputs">
-                            <input type="text" inputmode="numeric" placeholder="DD" aria-label="Día" maxlength="2" required>
-                            <input type="text" inputmode="numeric" placeholder="MM" aria-label="Mes" maxlength="2" required>
-                            <input type="text" inputmode="numeric" placeholder="AAAA" aria-label="Año" maxlength="4" required>
-                            </div>
+                        <div class="form_group">
+                        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                        <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" required>
                         </div>
+                    </div>    
+                    <div class="type1">
                         <!-- Login -->
                         <div class="form_group">
-                            <label for="login">Login</label>
-                            <input id="login" name="login" type="text" required>
+                        <label for="login">Login</label>
+                        <input id="login" name="login" type="text" required>
                         </div>
+
                         <!-- Password -->
                         <div class="form_group">
-                            <label for="password">Password</label>
-                            <input id="password" name="password" type="password" required>
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" required>
                         </div>
+                    </div>
+                    <div class="type2">
                         <!-- Subir imagen -->
-                        <div class="form_group form_file">
-                            <span class="label_inline">Subir imagen de perfil</span>
-                            <label class="file_fake">
-                            <input type="file" name="avatar" accept="image/*">
-                            <span>Examinar…</span>
-                            </label>
+                        <div class="form_group">
+                        <label for="avatar">Subir imagen de perfil</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/*" not required>
                         </div>
+
                         <!-- Checkbox -->
-                        <div class="form_group form_terms">
-                            <input type="checkbox" id="privacidad" required>
-                            <label for="privacidad">Acepto la <a href="#">Política de privacidad</a></label>
+                        <div class="checkbox">
+                        <input type="checkbox" id="privacidad" required>
+                        <label for="privacidad">Acepto la <a href="#">Política de privacidad</a></label>
                         </div>
-                
-                        <!-- Acciones -->
-                        <div class="register">
-                            <!-- Enlace a Versión b -->
-                            <a class="register_btn" href="#versionB" role="button">Guardar datos y acceder</a>
-                            <a class="back_btn" href="index.html">Volver</a>
-                        </div>
-                    </form>
-                </section>
+                    </div>
+                    <!-- Acciones -->
+                    <div class="register">
+                    <button class="register_btn">Guardar datos y acceder</button>
+                    </div>
+                </form>
             </section>
         </main>
+
         <footer> <!--Pie de página-->
             <div class="footer_left">
                 <p>© 2025 Mochileros<br>sin Fronteras</p>
