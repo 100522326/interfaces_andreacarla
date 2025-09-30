@@ -273,7 +273,7 @@ aside {
     width: auto;
 }
 .log_out_btn:hover {
-    background-color: #3d4e22;
+    background-color: #6b8e23;
 }  
 .filters {
     display: grid;
@@ -320,7 +320,7 @@ form.buscador button {
 }
   
 form.buscador button:hover {
-    background: #3d4d21;
+    background: #6b8e23;
 }
   
 form.buscador::after {
