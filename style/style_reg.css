@@ -54,6 +54,8 @@ main{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.pag_registro{
   border: solid 2px;
   background-color: #bbb;
   padding: 20px;
@@ -138,28 +140,19 @@ h1 {
 /* MEDIA QUERIES        */
 
 @media (max-width: 900px) {
-  main {
+  .pag_registro {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 900px) {
-  .experiencias {
+  .pag_registro {
     grid-template-columns: repeat(2, minmax(220px, 1fr));
   }
 }
 
 @media (max-width: 600px) {
-  .experiencias {
+  .pag_registro {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 900px) {
-  .registro_form {
-    grid-template-columns: 1fr;
-  }
-  .fecha_inputs {
-    grid-template-columns: 48px 48px 1fr;
   }
 }
