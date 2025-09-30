@@ -226,10 +226,10 @@ main {
 /* --- Main Right (Aside) --- */
 
 aside {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
 }
 
 .user {
@@ -239,14 +239,14 @@ aside {
     background-color: #e5e1d1;
     padding: 20px;
     border-radius: 12px;
-    gap: 15px;
+    gap: 8px;
     width: 100%;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 .user_actions {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
     width: 90%;
     align-items: center;
@@ -255,22 +255,20 @@ aside {
   font-size: 1.4rem;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #050a00;
 }
-
-.log_out_btn{
-    flex: 1;
-    padding: 6px 12px;
+.log_out_btn a{
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 14px;
     border: none;
     border-radius: 8px;
     background-color: #556b2f;
     color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
     cursor: pointer;
     text-decoration: none;
-    width: auto;
+    
 }
 .log_out_btn:hover {
     background-color: #6b8e23;
@@ -396,7 +394,6 @@ form.buscador::after {
     background-color: #556b2f;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
   }
   
   .consejos_input button:hover {
@@ -406,35 +403,79 @@ form.buscador::after {
 /* FOOTER               */
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;     
+    gap: 20px;
+    padding: 15px 30px;
 }
-
-.footer_left{
+.footer_left {
+    flex-shrink: 0;
+    text-align: left;
+}
+.footer_center {
     display: flex;
     align-items: center;
-}
-
-.footer_nav {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.footer_right {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.newsletter{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 2px;
+    gap: 25px;
+    flex: 1;  
 }
-
+.footer_center :hover {
+    color: #007BFF;
+}
+.footer_nav {
+    display: flex;
+    gap: 15px;
+}
+.footer_nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.footer_right {
+    display: flex;
+    gap: 12px;
+}
+.footer_right img {
+    width: 40px;
+    height: 40px;
+}
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.newsletter label {
+    font-weight: 600;
+    margin-right: 8px;
+}  
+.newsletter_registro {
+    display: flex;
+    gap: 8px;
+}
+.newsletter input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+} 
+.newsletter button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #556b2f;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.newsletter button:hover {
+    background-color: #6b8e23;
+}
+  
+  
 /* UTILIDADES           */
 
 h1 {
@@ -472,4 +513,32 @@ h1 {
   .fecha_inputs {
     grid-template-columns: 48px 48px 1fr;
   }
+}
+@media (max-width: 600px) {
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer_center {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .newsletter {
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .newsletter_registro {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .newsletter input,
+    .newsletter button {
+      width: 100%;
+    }
 }
