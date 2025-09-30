@@ -1,0 +1,211 @@
+<!--Esta será la página principal sin una sesión iniciada-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pagina_web1</title>
+    <link rel="stylesheet" href="style/style_user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <body>
+        <header> 
+            <div class="header_left">
+                <h1>Mochilas de larga distancia</h1>
+            </div>
+            <div class="header_nav">
+                <nav>
+                    <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Experiencias</a></li>
+                    <li><a href="#">Consejos</a></li>
+                    <li><a href="#">Foro</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>  
+            </div>
+            <div class="header_right">
+                <img src="images/logo.png" alt="Logo" width="60" height="60">
+                <select class="idioma">
+                    <option selected>ES</option>
+                    <option>EN</option>
+                    <option>IT</option>
+                    <option>FR</option>
+                </select>
+            </div>
+        </header>
+
+        <main id="home" class="pagina_principal" > <!--Cuerpo principal : 2 contenedores-->
+
+            <!--Contenedor izquierdo-->
+            <section class="main_left">
+                
+                <article class="main_left_first_row">
+                    <h1>COMPARTE Y DESCUBRE!</h1>
+                    <h1>Viajes mochileros de larga distancia</h1>
+                </article>
+                <!-- Carrusel  -->
+                <article class="main_left_second_row">
+                    <div class="info_trips">
+                        <!-- Arriba -->
+                        <div class="info_trips_top">
+                            <h1>Pack Sudeste Asiático</h1>
+                            <p>600€</p>
+                        </div>
+                        <!-- Abajo -->
+                        <div class="info_trips_bottom">
+                            <p>Vietnam & Camboya: buses, hostales y guía de visados</p>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <button class="slider_arrow_left" aria-label="Atrás">←</button>
+                        <button class="slider_arrow_right" aria-label="Siguientes packs">→</button>
+                    </div>
+                    <div class="comprar">
+                        <button>Comprar</button>   
+                    </div>
+                </article>
+
+                <article class="main_left_third_row">
+                    <h2>Experiencias de la comunidad mochilera</h2>
+                    <ul class="experiencias">
+                    <li class="card">
+                        <h3>Senderismo por Escocia</h3>
+                        <img class="pic" src="images/escocia.png" alt="Paisaje de Escocia">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Visita las pirámides de Egipto</h3>
+                        <img class="pic" src="images/egipto.png" alt="Pirámides de Egipto">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Conoce la Costa Amalfitana</h3>
+                        <img class="pic" src="images/costa_amalfitana.png" alt="Costa Amalfitana">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Escapada por Liubliana</h3>
+                        <img class="pic" src="images/liubliana.png" alt="Centro de Liubliana">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Auroras boreales en Groenlandia</h3>
+                        <img class="pic" src="images/groenlandia.png" alt="Auroras en Groenlandia">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3>Trekking en los Pirineos</h3>
+                        <img class="pic" src="images/pirineos.png" alt="Ruta en Pirineos">
+                        <div class="like_more">
+                        <img class="like" src="images/like.png" alt="Me gusta">
+                        <button class="more" type="button">Ver más</button>
+                        </div>
+                    </li>
+                    </ul>
+                </article>
+                </section>
+
+            <!--Contenedor derecho-->
+
+            <aside class= "main_right">
+                <section class="user">
+                    <h2>¡Hola, Maria!</h2>
+                    <div class="user_actions">
+                        <img src="images/icono_usuario.png" alt="Icono usuario" width="80" height="80">
+                        <div class="log_out_btn">
+                            <a class="log_out_btn" id="cerrar_sesion" href="./index.html">Cerrar sesión</a>
+                    </div>
+                    
+                </section>   
+                <section class="filters">
+                    <h1>Busca Experiencias</h1>
+                    <div class="row_checkboxes">
+                        <div class="check_item">
+                            <input type="checkbox" id="América"><label for="América">América</label>
+                        </div>
+                        <div class="check_item">
+                            <input type="checkbox" id="Asia"><label for="Asia">Asia</label>
+                        </div>
+                        <div class="check_item">
+                            <input type="checkbox" id="Europa"><label for="Europa">Europa</label>
+                        </div>
+                        <div class="check_item">
+                            <input type="checkbox" id="África"><label for="África">África</label>
+                        </div>
+                      </div>
+                    <div class="search_bar">
+                        <form class="buscador" action="#" style="margin:auto;max-width:300px">
+                            <input type="text" placeholder="Buscar..." name="buscar">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </section>
+                <section class="ultimos_consejos">
+                    <h1>Últimos consejos</h1>
+                    <div class="consejos1">
+                        <ul>
+                            <li><a href="#">Qué llevar en la mochila</a></li>
+                            <li><a href="#">Vacunas necesarias</a></li>
+                            <li><a href="#">Seguridad en ruta</a></li>
+                        </ul>
+                    </div>
+                    <div class="consejos_input">
+                            <h1>¿Tienes algún consejo?</h1>
+                            <input type="text" id="titulo" name="titulo" placeholder="Título del consejo">
+                            <textarea id="contenido" name="contenido" placeholder="Escribe tu consejo aquí..." rows="4"></textarea>
+                            <button type="submit">Enviar</button>
+                    </div>
+                </section>
+                
+                <div class="calendario">
+                    <img src="images/calendario.png" alt="Icono usuario" width="200" height="200">
+
+                </div>
+                          
+
+                    
+                    
+                </section>
+            </aside>
+        </main>
+        <footer> <!--Pie de página-->
+            <div class="footer_left">
+                <p>© 2025 Mochileros<br>sin Fronteras</p>
+            </div>
+            <nav class="footer_nav">
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Ayuda</a>
+            </nav>
+            <div class="footer_right">
+                <img src="images/ig.png" width="60" height="60">
+                <img src="images/yt.png" width="60" height="60">
+                <img src="images/tiktok.png" width="60" height="60">
+            </div>
+            <form class="newsletter">
+                <label for="newsletter_email">Suscripción a newsletter:</label>
+                <div class="newsletter_registro">
+                <input type="email" id="newsletter_email" placeholder="Tu correo" required>
+                <button type="submit">Suscribirse</button>
+                </div>
+            </form>
+        </footer>
+    </body>
+</html>
