@@ -230,7 +230,10 @@ h1 {
     grid-template-columns: 1fr;
   }
   header {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
   }
   .experiencias {
     grid-template-columns: repeat(2, minmax(220px, 1fr));
@@ -240,6 +243,10 @@ h1 {
   }
   .fecha_inputs {
     grid-template-columns: 48px 48px 1fr;
+  }
+  footer{
+    position: relative;
+    height: auto;
   }
 }
 

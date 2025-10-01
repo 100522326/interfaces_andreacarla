@@ -281,12 +281,19 @@ h1 {
 }
 
 /*MEDIA QUERIES         */
+
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
   }
   header {
     grid-template-columns: 1fr;
+    height: auto;
+    position: relative;
+  }
+  footer{
+    height: auto;
+    position: relative;
   }
 }
 
@@ -298,6 +305,10 @@ h1 {
       margin: 0;
     }
     .main_left_first_row{
+        width: auto;
+    }
+    .main_left_second_row{
+        padding: 0;
         width: auto;
     }
     .main_right{

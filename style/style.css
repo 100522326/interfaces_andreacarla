@@ -458,6 +458,7 @@ h1 {
   }
   header {
     grid-template-columns: 1fr;
+    height: auto;
   }
   .experiencias {
     grid-template-columns: repeat(2, minmax(220px, 1fr));
@@ -470,6 +471,9 @@ h1 {
   }
   .newsletter {
     grid-template-columns: 1fr;
+  }
+  footer{
+    height: auto;
   }
 }
 
