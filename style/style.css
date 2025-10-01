@@ -78,19 +78,6 @@ main {
   padding: 20px;
 }
 
-.main_left_first_row h1 {
-  color: #541e44;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding-bottom: 20px;
-}
-.main_left_first_row h2 {
-  color: #3a2634;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding-bottom: 20px;
-}
-
 .main_left_second_row {
   padding: 15px;
   display: grid;
@@ -106,12 +93,6 @@ main {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
-}
-
-.info_trips_top p {
-  border: 1px solid #7a7a7a;
-  border-radius: 12px;
-  padding: 6px;
 }
 
 .info_trips_bottom {
@@ -449,6 +430,39 @@ h1 {
   font-weight: bold;
 }
 
+.main_left_first_row h2 {
+  color: #541e44;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.main_left_first_row p {
+  color: #3a2634;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.enlaces_aside h3{
+  white-space: nowrap;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: bold;
+}
+.info_trips_top h2{
+  white-space: nowrap;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: bold;
+  border: none;
+  padding: 0;
+}
+.info_trips_top p {
+  border: 1px solid #7a7a7a;
+  border-radius: 12px;
+  padding: 6px;
+  font-size: medium;
+  font-weight: normal;
+}
 
 /* MEDIA QUERIES        */
 
