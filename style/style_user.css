@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* Reset y tipografía */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 
-/* HEADER               */
+/* HEADER*/
 
 header {
   display: grid;
@@ -50,7 +50,7 @@ header {
   color: #007BFF;
 }
 
-/* MAIN (contenedor)    */
+/* MAIN: estructura en grid 2 columnas */
 
 main {
   display: grid;
@@ -62,7 +62,7 @@ main {
   padding-bottom: 10px;
 }
 
-/* --- Main Left --- */
+/* MAIN LEFT: carrusel + experiencias */
 
 .main_left {
   display: flex;
@@ -145,7 +145,7 @@ main {
   padding:3px;
 }
 
-/* --- Main Left - Experiencias --- */
+/* Main Left - Experiencias */
 
 .experiencias {
   display: grid;
@@ -223,33 +223,33 @@ main {
   cursor: pointer;
 }
 
-/* --- Main Right (Aside) --- */
+/* MAIN RIGHT: aside del usuario */
 
 aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
 }
 
 .user {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e5e1d1;
-    padding: 20px;
-    border-radius: 12px;
-    gap: 8px;
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5e1d1;
+  padding: 20px;
+  border-radius: 12px;
+  gap: 8px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 .user_actions {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 90%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  align-items: center;
 }
 .user h2 {
   font-size: 1.4rem;
@@ -259,218 +259,218 @@ aside {
   color: #050a00;
 }
 .log_out_btn a{
-    align-self: flex-end;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 8px;
-    background-color: #556b2f;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
+  align-self: flex-end;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #556b2f;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
     
 }
 .log_out_btn:hover {
-    background-color: #6b8e23;
+  background-color: #6b8e23;
 }  
 .filters {
-    display: grid;
-    align-items: center;
-    background-color: #e5e1d1;
-    padding: 20px;
-    border-radius: 12px;
-    gap: 15px;
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  display: grid;
+  align-items: center;
+  background-color: #e5e1d1;
+  padding: 20px;
+  border-radius: 12px;
+  gap: 15px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 .row_checkboxes {
-    display: grid;
-    
-    grid-template-columns: 1fr 1fr; 
-    gap: 12px 24px; 
-    width: 90%;
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr; 
+  gap: 12px 24px; 
+  width: 90%;
 }
 .check_item {
-    display: flex;
-    align-items: center;
-    gap: 8px; 
+  display: flex;
+  align-items: center;
+  gap: 8px; 
 }
 form.buscador input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
   }
   
 form.buscador button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #556b2f;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #556b2f;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
 }
   
 form.buscador button:hover {
-    background: #6b8e23;
+  background: #6b8e23;
 }
   
 form.buscador::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 .ultimos_consejos{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    background-color: #e5e1d1;
-    padding: 20px;
-    border-radius: 12px;
-    gap: 15px;
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #e5e1d1;
+  padding: 20px;
+  border-radius: 12px;
+  gap: 15px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 .consejos1 ul {
-    list-style: none;
-    margin-bottom: 10px;
+  list-style: none;
+  margin-bottom: 10px;
 }
 
 .consejos1 li {
-    margin-bottom: 6px;
-    font-size: 0.95rem;
-    color: #333;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #333;
 }
 
 .consejos1 a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 .consejos1 a:hover {
-    color: #556b2f;
-    text-decoration: underline;
+  color: #556b2f;
+  text-decoration: underline;
 }
 .consejos_input {
-    display: flex;
-    flex-direction: column;
-    gap: 12px; 
-    max-width: 500px;
-    margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+  max-width: 500px;
+  margin: 20px auto;
 }
 .consejos_input input[type="text"],
 .consejos_input textarea {
-    padding: 10px;
-    font-size: 10px;
-    border-radius: 12px;
-    border: 1px solid grey;
-    float: left;
-    width: 90%;
-    background: #f1f1f1;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 12px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f1f1f1;
 
 }
 .consejos_input button {
-    align-self: flex-end;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 8px;
-    background-color: #556b2f;
-    color: #fff;
-    cursor: pointer;
-  }
+  align-self: flex-end;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #556b2f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.consejos_input button:hover {
+  background-color: #6b8e23;
+}
   
-  .consejos_input button:hover {
-    background-color: #6b8e23;
-  }
-  
-/* FOOTER               */
+/* FOOTER fijo con enlaces y newsletter */
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;     
-    width: 100%;
-    height: 65px;
-    padding: 10px;
-    background-color: #e3c5d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;     
+  width: 100%;
+  height: 65px;
+  padding: 10px;
+  background-color: #e3c5d0;
 }
 .footer_left {
-    flex-shrink: 0;
-    text-align: left;
+  flex-shrink: 0;
+  text-align: left;
 }
 .footer_center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    flex: 1;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex: 1;  
 }
 .footer_center :hover {
-    color: #007BFF;
+  color: #007BFF;
 }
 .footer_nav {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 .footer_nav a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
 }
 .footer_right {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 .footer_right img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 .newsletter {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    background: #f4f4f4;
-    padding: 10px 15px;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 .newsletter label {
-    font-weight: 600;
-    margin-right: 8px;
+  font-weight: 600;
+  margin-right: 8px;
 }  
 .newsletter_registro {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 .newsletter input {
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 } 
 .newsletter button {
-    padding: 6px 12px;
-    border: none;
-    border-radius: 6px;
-    background-color: #556b2f;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #556b2f;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
 .newsletter button:hover {
-    background-color: #6b8e23;
+  background-color: #6b8e23;
 }
   
   
-/* UTILIDADES           */
+/* UTILIDADES: títulos */
 
 h1 {
   white-space: nowrap;
@@ -499,7 +499,7 @@ h2 {
 
 
 
-/* MEDIA QUERIES        */
+/* MEDIA QUERIES: responsive */
 
 @media (max-width: 768px) {
   main {

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Reset y tipografía */
 
 * {
   box-sizing: border-box;
@@ -11,7 +12,7 @@ body {
 }
 
 
-/* HEADER               */
+/* HEADER : cabecera con logo, menú y selector de idioma */
 
 header {
   display: grid;
@@ -62,7 +63,7 @@ main {
   padding-bottom: 10px;
 }
 
-/* --- Main Left --- */
+/* MAIN LEFT: bienvenida, packs y experiencias */
 
 .main_left {
   display: flex;
@@ -88,7 +89,7 @@ main {
   background-position: center;
   height: 250px;
 }
-
+/* Main Left - Viaje banner */
 .info_trips_top {
   display: flex;
   justify-content: space-between;
@@ -137,7 +138,7 @@ main {
   padding:3px;
 }
 
-/* --- Main Left - Experiencias --- */
+/* Main Left - Experiencias */
 
 .main_left_third_row {
   display: grid;
@@ -220,7 +221,7 @@ main {
   cursor: pointer;
 }
 
-/* --- Main Right (Aside) --- */
+/* MAIN RIGHT: aside con login y enlaces */
 
 aside {
   display: flex;
@@ -228,7 +229,7 @@ aside {
   align-items: center;
   background-color: #f4f4f4;
 }
-
+/* Login info */
 .credenciales {
   display: flex;
   flex-direction: column;
@@ -281,147 +282,149 @@ aside {
   justify-content: center;
 }
 .login a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .submit_btn {
-    padding: 6px 12px;
-    border: none;
-    border-radius: 6px;
-    background-color: #8b4513;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #8b4513;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
 .submit_btn a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .submit_btn:hover {
   background-color: #6a3210;
 }
 
 .sign_up_btn {
-    padding: 6px 12px;
-    border: none;
-    border-radius: 6px;
-    background-color: #556b2f;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #556b2f;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .sign_up_btn:hover {
-    background-color: #3d4e22;
+  background-color: #3d4e22;
 }
 
+/* Enlaces */
 .enlaces_aside h1 {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #6a3210;
-    font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #6a3210;
+  font-weight: 700;
 }
 
 .enlaces_aside ul {
-    list-style: none;
-    padding-left: 16px;
-    margin-bottom: 10px;
+  list-style: none;
+  padding-left: 16px;
+  margin-bottom: 10px;
 }
 
 .enlaces_aside li {
-    margin-bottom: 6px;
-    font-size: 0.95rem;
-    color: #333;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #333;
 }
 
 .enlaces_aside a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 .enlaces_aside a:hover {
-    color: #556b2f;
-    text-decoration: underline;
+  color: #556b2f;
+  text-decoration: underline;
 }
-/* FOOTER               */
+
+/* FOOTER: pie con enlaces, redes sociales y newsletter */
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;     
-    width: 100%;
-    height: 65px;
-    padding: 10px;
-    background-color: #e3c5d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;     
+  width: 100%;
+  height: 65px;
+  padding: 10px;
+  background-color: #e3c5d0;
 }
 .footer_left {
-    flex-shrink: 0;
-    text-align: left;
+  flex-shrink: 0;
+  text-align: left;
 }
 .footer_center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    flex: 1;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex: 1;  
 }
 .footer_center :hover {
-    color: #007BFF;
+  color: #007BFF;
 }
 .footer_nav {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 .footer_nav a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
 }
 .footer_right {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 .footer_right img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 .newsletter {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 8px;
-    background: #f4f4f4;
-    padding: 10px 15px;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  background: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 .newsletter label {
-    font-weight: 600;
-    margin-right: 8px;
+  font-weight: 600;
+  margin-right: 8px;
 }  
 .newsletter_registro {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 .newsletter input {
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 } 
 .newsletter button {
-    padding: 6px 12px;
-    border: none;
-    border-radius: 6px;
-    background-color: #556b2f;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #556b2f;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
 .newsletter button:hover {
-    background-color: #6b8e23;
+  background-color: #6b8e23;
 }
   
   
-/* UTILIDADES           */
+/* UTILIDADES: títulos y tipografía */
 
 h1 {
   white-space: nowrap;
@@ -464,7 +467,7 @@ h1 {
   font-weight: normal;
 }
 
-/* MEDIA QUERIES        */
+/* MEDIA QUERIES: adaptación a móviles y tablets */
 
 @media (max-width: 768px) {
   main {
